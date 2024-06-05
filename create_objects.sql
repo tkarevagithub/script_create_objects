@@ -17,11 +17,11 @@ SET default_with_oids = false;
 --- drop tables
 ---
 
-DROP TABLE IF EXISTS shops;
-DROP TABLE IF EXISTS employees;
-DROP TABLE IF EXISTS products;
-DROP TABLE IF EXISTS purchases;
-DROP TABLE IF EXISTS purchases_receipts;
+DROP TABLE IF EXISTS shops CASCADE;
+DROP TABLE IF EXISTS employees CASCADE;
+DROP TABLE IF EXISTS products CASCADE;
+DROP TABLE IF EXISTS purchases CASCADE;
+DROP TABLE IF EXISTS purchase_receipts CASCADE;
 
 --
 -- Name: shops; Type: TABLE; Schema: public; Owner: -; Tablespace: 
@@ -43,7 +43,7 @@ CREATE TABLE shops (
 
 CREATE TABLE employees (
     id smallint NOT NULL,
-    shop_id smallint NOT NULL,
+    shop_id smallint,
     first_name character varying(100) NOT NULL,
     last_name character varying(100) NOT NULL,
     phone character varying(50),
@@ -126,7 +126,7 @@ ALTER TABLE ONLY purchases
 --
 
 ALTER TABLE ONLY purchase_receipts
-    ADD CONSTRAINT purchase_receipts_pk PRIMARY KEY (purchase_id);
+    ADD CONSTRAINT purchase_receipts_pk PRIMARY KEY (purchase_id, ordinal_number);
 
 
 --
