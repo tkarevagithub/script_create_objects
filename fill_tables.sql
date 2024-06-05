@@ -1,41 +1,63 @@
 --
--- Data for Name: shops; Type: TABLE DATA; Schema: public; Owner: -
---
-
-INSERT INTO shops VALUES (1, 1, 'Семерочка-Пермь', 'Пермский край', 'Пермь', 'ул. Попова, 5');
-INSERT INTO shops VALUES (2, 2, 'Семерочка-Липецк', 'Липецкая область', 'Липецк', 'ул. Шевцова, 10');
-INSERT INTO shops VALUES (3, 3, 'Семерочка-Брянск', 'Брянская область', 'Брянск', 'ул. Дружбы, 12');
-INSERT INTO shops VALUES (4, 4, 'Семерочка-Курган', 'Курганская область', 'Курган', 'ул. Иванова, 13');
-INSERT INTO shops VALUES (5, 5, 'Семерочка-Екб', 'Екатеринбургская область', 'Екатеринбург', 'ул. Рыкова, 4');
-INSERT INTO shops VALUES (6, 6, 'Семерочка-Воронеж', 'Воронежская область', 'Воронеж', 'ул. Комсомольская, 56');
-INSERT INTO shops VALUES (7, 7, 'Семерочка-Орел', 'Орловская область', 'Орел', 'ул. Пушкина, 2');
-INSERT INTO shops VALUES (8, 8, 'Семерочка-МО', 'Московская область', 'Красногорск', 'ул. Щукина, 1');
-
-
---
 -- Data for Name: employees; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-INSERT INTO employees VALUES (1, 1, 'Иван', 'Иванов', '+79003333333', 'ivan@mail.ru', 'продавец-консультант');
-INSERT INTO employees VALUES (2, 2, 'Петр', 'Насков', '+79003353333', 'petr@mail.ru', 'продавец-консультант');
-INSERT INTO employees VALUES (3, 3, 'Степан', 'Смешин', '+79004333333', 'stepan@mail.ru', 'продавец-консультант');
-INSERT INTO employees VALUES (4, 4, 'Мария', 'Иванова', '+79033333333', 'maria@mail.ru', 'продавец-консультант');
-INSERT INTO employees VALUES (5, 5, 'Ольга', 'Сидорова', '+79803333333', 'olga@mail.ru', 'продавец-консультант');
-INSERT INTO employees VALUES (6, 6, 'Анастасия', 'Петрова', '+79008933333', 'anas@mail.ru', 'продавец-консультант');
-INSERT INTO employees VALUES (7, 7, 'Игорь', 'Шандрин', '+79003333673', 'igor@mail.ru', 'продавец-консультант');
-INSERT INTO employees VALUES (8, 8, 'Иван', 'Щукин', '+79003333553', 'ivan2@mail.ru', 'продавец-консультант');
-INSERT INTO employees VALUES (9, 1, 'Ангелина', 'Ивлеева', '+79103333333', 'angel@mail.ru', 'управляющий');
-INSERT INTO employees VALUES (10, 2, 'Максим', 'Гулкин', '+79004933333', 'max@mail.ru', 'управляющий');
-INSERT INTO employees VALUES (11, 3, 'Александр', 'Сидоров', '+79203333333', 'alex@mail.ru', 'управляющий');
-INSERT INTO employees VALUES (12, 4, 'Алена', 'Яшина', '+79003333311', 'alyona@mail.ru', 'управляющий');
-INSERT INTO employees VALUES (13, 5, 'Елена', 'Божова', '+79003333443', 'elena@mail.ru', 'управляющий');
-INSERT INTO employees VALUES (14, 6, 'Ирина', 'Амелькина', '+79009563333', 'irina@mail.ru', 'управляющий');
-INSERT INTO employees VALUES (15, 7, 'Константин', 'Пустов', '+79003330333', 'kons@mail.ru', 'управляющий');
-INSERT INTO employees VALUES (16, 8, 'Кира', 'Минина', '+79803383333', 'kira@mail.ru', 'управляющий');
-INSERT INTO employees VALUES (17, 1, 'Ульяна', 'Зуйкова', '+79003399333', 'ulya@mail.ru', 'бухгалтер');
-INSERT INTO employees VALUES (18, 2, 'Игнат', 'Ильшин', '+79003333300', 'ignat@mail.ru', 'бухгалтер');
-INSERT INTO employees VALUES (19, 3, 'Николай', 'Иваньков', '+79203363333', 'nik@mail.ru', 'уборщик');
-INSERT INTO employees VALUES (20, 4, 'Паулина', 'Зыкова', '+79103883333', 'paul@mail.ru', 'уборщик');
+INSERT INTO employees VALUES (1, NULL, 'Иван', 'Иванов', '+79003333333', 'ivan@mail.ru', 'продавец-консультант');
+INSERT INTO employees VALUES (2, NULL, 'Петр', 'Насков', '+79003353333', 'petr@mail.ru', 'продавец-консультант');
+INSERT INTO employees VALUES (3, NULL, 'Степан', 'Смешин', '+79004333333', 'stepan@mail.ru', 'продавец-консультант');
+INSERT INTO employees VALUES (4, NULL, 'Мария', 'Иванова', '+79033333333', 'maria@mail.ru', 'продавец-консультант');
+INSERT INTO employees VALUES (5, NULL, 'Ольга', 'Сидорова', '+79803333333', 'olga@mail.ru', 'продавец-консультант');
+INSERT INTO employees VALUES (6, NULL, 'Анастасия', 'Петрова', '+79008933333', 'anas@mail.ru', 'продавец-консультант');
+INSERT INTO employees VALUES (7, NULL, 'Игорь', 'Шандрин', '+79003333673', 'igor@mail.ru', 'продавец-консультант');
+INSERT INTO employees VALUES (8, NULL, 'Иван', 'Щукин', '+79003333553', 'ivan2@mail.ru', 'продавец-консультант');
+INSERT INTO employees VALUES (9, NULL, 'Ангелина', 'Ивлеева', '+79103333333', 'angel@mail.ru', 'управляющий');
+INSERT INTO employees VALUES (10, NULL, 'Максим', 'Гулкин', '+79004933333', 'max@mail.ru', 'управляющий');
+INSERT INTO employees VALUES (11, NULL, 'Александр', 'Сидоров', '+79203333333', 'alex@mail.ru', 'управляющий');
+INSERT INTO employees VALUES (12, NULL, 'Алена', 'Яшина', '+79003333311', 'alyona@mail.ru', 'управляющий');
+INSERT INTO employees VALUES (13, NULL, 'Елена', 'Божова', '+79003333443', 'elena@mail.ru', 'управляющий');
+INSERT INTO employees VALUES (14, NULL, 'Ирина', 'Амелькина', '+79009563333', 'irina@mail.ru', 'управляющий');
+INSERT INTO employees VALUES (15, NULL, 'Константин', 'Пустов', '+79003330333', 'kons@mail.ru', 'управляющий');
+INSERT INTO employees VALUES (16, NULL, 'Кира', 'Минина', '+79803383333', 'kira@mail.ru', 'управляющий');
+INSERT INTO employees VALUES (17, NULL, 'Ульяна', 'Зуйкова', '+79003399333', 'ulya@mail.ru', 'бухгалтер');
+INSERT INTO employees VALUES (18, NULL, 'Игнат', 'Ильшин', '+79003333300', 'ignat@mail.ru', 'бухгалтер');
+INSERT INTO employees VALUES (19, NULL, 'Николай', 'Иваньков', '+79203363333', 'nik@mail.ru', 'уборщик');
+INSERT INTO employees VALUES (20, NULL, 'Паулина', 'Зыкова', '+79103883333', 'paul@mail.ru', 'уборщик');
+
+
+--
+-- Data for Name: shops; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+INSERT INTO shops VALUES (1, 9, 'Семерочка-Пермь', 'Пермский край', 'Пермь', 'ул. Попова, 5');
+INSERT INTO shops VALUES (2, 10, 'Семерочка-Липецк', 'Липецкая область', 'Липецк', 'ул. Шевцова, 10');
+INSERT INTO shops VALUES (3, 11, 'Семерочка-Брянск', 'Брянская область', 'Брянск', 'ул. Дружбы, 12');
+INSERT INTO shops VALUES (4, 12, 'Семерочка-Курган', 'Курганская область', 'Курган', 'ул. Иванова, 13');
+INSERT INTO shops VALUES (5, 13, 'Семерочка-Екб', 'Екатеринбургская область', 'Екатеринбург', 'ул. Рыкова, 4');
+INSERT INTO shops VALUES (6, 14, 'Семерочка-Воронеж', 'Воронежская область', 'Воронеж', 'ул. Комсомольская, 56');
+INSERT INTO shops VALUES (7, 15, 'Семерочка-Орел', 'Орловская область', 'Орел', 'ул. Пушкина, 2');
+INSERT INTO shops VALUES (8, 16, 'Семерочка-МО', 'Московская область', 'Красногорск', 'ул. Щукина, 1');
+
+
+UPDATE employees SET shop_id = 1 WHERE id = 1;
+UPDATE employees SET shop_id = 2 WHERE id = 2;
+UPDATE employees SET shop_id = 3 WHERE id = 3;
+UPDATE employees SET shop_id = 4 WHERE id = 4;
+UPDATE employees SET shop_id = 5 WHERE id = 5;
+UPDATE employees SET shop_id = 6 WHERE id = 6;
+UPDATE employees SET shop_id = 7 WHERE id = 7;
+UPDATE employees SET shop_id = 8 WHERE id = 8;
+UPDATE employees SET shop_id = 1 WHERE id = 9;
+UPDATE employees SET shop_id = 2 WHERE id = 10;
+UPDATE employees SET shop_id = 3 WHERE id = 11;
+UPDATE employees SET shop_id = 4 WHERE id = 12;
+UPDATE employees SET shop_id = 5 WHERE id = 13;
+UPDATE employees SET shop_id = 6 WHERE id = 14;
+UPDATE employees SET shop_id = 7 WHERE id = 15;
+UPDATE employees SET shop_id = 8 WHERE id = 16;
+UPDATE employees SET shop_id = 3 WHERE id = 17;
+UPDATE employees SET shop_id = 1 WHERE id = 18;
+UPDATE employees SET shop_id = 5 WHERE id = 19;
+UPDATE employees SET shop_id = 8 WHERE id = 20;
 
 --
 -- Data for Name: purchases; Type: TABLE DATA; Schema: public; Owner: -
