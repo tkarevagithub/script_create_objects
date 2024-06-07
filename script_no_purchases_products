@@ -1,0 +1,5 @@
+SELECT code, name
+FROM products
+LEFT JOIN purchase_receipts
+ON products.id = purchase_receipts.product_id
+WHERE purchase_id IS NULL;
