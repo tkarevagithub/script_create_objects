@@ -1,0 +1,9 @@
+SELECT shops.name, first_name, last_name, SUM(purchases.amount)
+FROM employees
+RIGHT JOIN shops
+ON shops.id = employees.shop_id
+RIGHT JOIN purchases
+ON employees.id = purchases.seller_id
+WHERE employees.id IS NOT NULL
+GROUP BY shops.name, employees.first_name, employees.last_name
+ORDER BY sum DESC;
