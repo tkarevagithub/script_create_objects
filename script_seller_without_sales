@@ -1,0 +1,7 @@
+SELECT shops.name, first_name, last_name 
+FROM employees
+LEFT JOIN shops
+ON shops.id = employees.shop_id
+LEFT JOIN purchases
+ON employees.id = purchases.seller_id
+WHERE (seller_id IS NULL AND job_name = 'продавец-консультант');
