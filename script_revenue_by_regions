@@ -1,0 +1,9 @@
+SELECT shops.region, SUM(purchases.amount)
+FROM employees
+RIGHT JOIN shops
+ON shops.id = employees.shop_id
+RIGHT JOIN purchases
+ON employees.id = purchases.seller_id
+WHERE employees.id IS NOT NULL
+GROUP BY shops.region
+ORDER BY sum DESC;
