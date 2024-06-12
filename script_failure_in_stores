@@ -1,0 +1,12 @@
+SELECT name, datetime, diff FROM (
+    SELECT purchases.id, purchases.datetime, shops.name, purchases.amount, purchases.amount - SUM(purchase_receipts.amount_full - purchase_receipts.amount_full * purchase_receipts.amount_discount / 100) AS diff
+    FROM purchases
+    JOIN purchase_receipts
+    ON purchase_receipts.purchase_id = purchases.id
+    JOIN employees
+	ON purchases.seller_id = employees.id
+    JOIN shops
+	ON employees.shop_id = shops.id
+    GROUP BY purchases.id, shops.name
+)
+WHERE diff != 0
